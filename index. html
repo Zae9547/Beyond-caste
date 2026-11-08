@@ -1,0 +1,139 @@
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f5ef;
+        color: #292321;
+        line-height: 1.6;
+    }
+
+    header {
+        background-color: #541d2b;
+        color: white;
+        padding: 20px 8%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    header h2 {
+        letter-spacing: 2px;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 14px;
+    }
+
+    nav a:hover {
+        color: #e7bd83;
+    }
+
+    .hero {
+        min-height: 75vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 60px 10%;
+        background: #eadfd5;
+    }
+
+    .hero h1 {
+        font-size: clamp(40px, 7vw, 70px);
+        color: #541d2b;
+        margin-bottom: 20px;
+    }
+
+    .hero p {
+        max-width: 700px;
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .button {
+        background-color: #541d2b;
+        color: white;
+        padding: 13px 28px;
+        text-decoration: none;
+        border-radius: 4px;
+    }
+
+    .button:hover {
+        background-color: #793548;
+    }
+
+    .intro {
+        padding: 70px 12%;
+        text-align: center;
+    }
+
+    .intro h2 {
+        color: #541d2b;
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+
+    .sections {
+        padding: 50px 8%;
+        background-color: #f0e9e1;
+    }
+
+    .sections h2 {
+        text-align: center;
+        color: #541d2b;
+        margin-bottom: 35px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 22px;
+    }
+
+    .card {
+        background: white;
+        padding: 28px;
+        border-radius: 8px;
+        border-bottom: 4px solid #541d2b;
+    }
+
+    .card h3 {
+        color: #541d2b;
+        margin-bottom: 12px;
+    }
+
+    footer {
+        background: #541d2b;
+        color: white;
+        text-align: center;
+        padding: 25px;
+    }
+
+    @media (max-width: 650px) {
+        header {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 12px;
+        }
+
+        nav a {
+            margin: 0;
+        }
+    }
+</style>
